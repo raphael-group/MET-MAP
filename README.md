@@ -1,21 +1,48 @@
-# MET-MAP
-Reproducibility repository for Multi-GASTON applied on spatial metabolomics data.
+# MET-MAP (Metabolic Topography Mapper)
+<!-- **Reproducibility repository for Multi-GASTON applied on spatial metabolomics data.** -->
 
-This repository provides two jupyter notebook tutorials on applying the deep learning model _Multi-GASTON_—-referred to here as _Metabolic Topography Mapper: MET-MAP_-—to spatial metabolomics data from murine liver and small intestine. To support reproducibility, we include example datasets, neural network outputs, and downstream metabolite analyses. Although these tutorials focus on metabolomics, MET-MAP is broadly applicable to any spatially-resolved data, enabling the recovery of tissue architecture and spatial patterns of feature variation across diverse organs. For more details about the model and analysis, please visit: https://github.com/raphael-group/Multi-GASTON and paper https://www.nature.com/articles/s41586-025-09616-5. 
-
+This repository provides the source code and Jupyter notebook tutorials for applying **MET-MAP**—a deep learning model that ecovers tissue architecture and spatial patterns of feature variation—to spatial metabolomics data from murine liver and small intestine. 
 <p align="center">
 <img src="plots/liver_demo.png" height=400/>
 <img src="plots/intestine_demo.png" height=400/>
 </p>
 
-## Installation
-For enviroment setup, please refer to Multi-GASTON installation at https://github.com/raphael-group/Multi-GASTON/tree/main. After installing Multi-GASTON package, simply activate the conda enviroment required for the jupyter notebooks.
+---
 
+> [!IMPORTANT]
+> **Version Note:** The source code contained in this repository is a **preliminary version** of the method used specifically for the analyses in our 2025 *Nature* publication. 
+> 
+> For the **current and actively maintained** version of the framework that enables simoutaneous learning from __multiple samples__ with __non-linear__ feature functions, please refer to [Multi-GASTON repository](https://github.com/raphael-group/Multi-GASTON).
+
+---
+
+## Overview
+
+MET-MAP is an unsupervised deep learning model that learns multiple spatial gradients simoutaineously from spatial metabolomics data. It is an extension of GASTON (https://pmc.ncbi.nlm.nih.gov/articles/PMC10592770/), which was designed for SRT data and learns a single topographic map of a 2-D tissue slice in terms of a 1-D coordinate called isodepth, where all genes can be expressed as a function of this __isodepth__. Now, allowing features like metabolites to follow __mulitple distinct spatial patterns__, MET-MAP captures the feature topography by learning __k isodepths__, that smoothly vary across a tissue slice and capture spatial organizations of different groups of spatially variable features.
+<p align="center">
+<img src="plots/NNarchitecture.png" height=400/>
+</p>
+
+To support long-term reproducibility, this repository now includes the original source code required to run the metabolomics tutorials. This ensures that the MET-MAP tutorials remain functional and independent of future updates to the main Multi-GASTON package. This repository includes:
+* **Original MET-MAP Source Code** (Preliminary version of Multi-GASTON)
+* **Example datasets**
+* **Neural network outputs**
+* **Downstream metabolite analyses**
+
+## Installation
+
+1. **Option 1:** To install the preliminary version of the method used in this repository
+   ```bash
+   git clone https://github.com/raphael-group/MET-MAP.git
+   cd MET-MAP
+   ```
+   
+2. **Option 2:** To install the current version of Multi-GASTON, which is **compatible** with MET-MAP applications, please refer to Multi-GASTON installation at https://github.com/raphael-group/Multi-GASTON/tree/main. After installing Multi-GASTON package, simply activate the conda enviroment required for the jupyter notebooks.
 ```
 conda activate multi_gaston_env
 ```
 
-## Reproducibility
+## Data availability
 For liver and small intestine metabolomics data used in the paper, please refer to Figshare repositories:
 
 Liver spatial metabolomics: https://doi.org/10.6084/m9.figshare.29318279.v1
