@@ -10,15 +10,15 @@ This repository provides the source code and Jupyter notebook tutorials for appl
 ---
 
 > [!IMPORTANT]
-> **Version Note:** The source code contained in this repository is a __**preliminary version**__ of the method used specifically for the analyses in our 2025 *Nature* publication. 
+> **Version Note:** MET-MAP and the source code contained in this repository is a **preliminary version** of the method Multi-GASTON. This version was used specifically for the analyses in our 2025 *Nature* publication. 
 > 
-> For the **current and actively maintained** version of the framework that enables simoutaneous learning from __multiple samples__ with __non-linear__ feature functions, please refer to [Multi-GASTON repository](https://github.com/raphael-group/Multi-GASTON).
+> For the **current and actively maintained** version of the framework, which now enables simoutaneous learning from _multiple samples_ with _non-linear_ feature functions, please refer to [Multi-GASTON repository](https://github.com/raphael-group/Multi-GASTON).
 
 ---
 
 ## Overview
 
-MET-MAP is an unsupervised deep learning model that learns multiple spatial gradients simoutaineously from spatial metabolomics data. It is an extension of GASTON (https://pmc.ncbi.nlm.nih.gov/articles/PMC10592770/), which was designed for spatially-resolved transcriptomics(SRT) data and learns a single topographic map of a 2-D tissue slice in terms of a 1-D coordinate called __isodepth__, where all genes can be expressed as a function of this isodepth. Now, allowing features like metabolites to be expressed as **linear** functions of __mulitple distinct spatial patterns__, MET-MAP captures the feature topography by learning __k isodepths__, that smoothly vary across a tissue slice and capture spatial organizations of different groups of spatially variable features. 
+MET-MAP is an unsupervised deep learning model that learns multiple spatial gradients simoutaineously from spatial metabolomics data. It is an extension of GASTON (https://pmc.ncbi.nlm.nih.gov/articles/PMC10592770/), which was designed for spatially-resolved transcriptomics(SRT) data and learns a single topographic map of a 2-D tissue slice in terms of a 1-D coordinate called _isodepth_, where all genes can be expressed as a function of this isodepth. Now, allowing features like metabolites to be expressed as **linear** functions of _mulitple distinct spatial patterns_, MET-MAP captures the feature topography by learning _k isodepths_, that smoothly vary across a tissue slice and capture spatial organizations of different groups of spatially variable features. 
 <p align="center">
 <img src="plots/NNarchitecture.png" height=400/>
 </p>
