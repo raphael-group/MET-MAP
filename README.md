@@ -10,7 +10,7 @@ This repository provides the source code and Jupyter notebook tutorials for appl
 ---
 
 > [!IMPORTANT]
-> **Version Note:** MET-MAP and the source code contained in this repository is a **preliminary implementation** of some of the ideas that are now part of Multi-GASTON. This implementation was used specifically for the analyses in our 2025 *Nature* publication. 
+> **Version Note:** MET-MAP and the source code contained in this repository is a **preliminary implementation** of some of the ideas that are now part of **Multi-GASTON**. This implementation was used specifically for the analyses in our 2025 *Nature* publication. 
 > 
 > For the **current and actively maintained** model, which enables simoutaneous learning from _multiple samples_ with _non-linear_ feature functions, please refer to [Multi-GASTON repository](https://github.com/raphael-group/Multi-GASTON).
 
@@ -24,7 +24,7 @@ MET-MAP is an unsupervised deep learning model that learns multiple spatial grad
 </p>
 
 To support reproducibility, this repository now includes:
-* **Original MET-MAP Source Code** (Preliminary version of Multi-GASTON)
+* **Original MET-MAP Source Code**
 * **Example datasets**
 * **Neural network outputs**
 * **Downstream metabolite analyses**
