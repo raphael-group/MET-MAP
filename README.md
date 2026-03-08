@@ -10,9 +10,9 @@ This repository provides the source code and Jupyter notebook tutorials for appl
 ---
 
 > [!IMPORTANT]
-> **Version Note:** MET-MAP and the source code contained in this repository is a **preliminary version** of the method Multi-GASTON. This version was used specifically for the analyses in our 2025 *Nature* publication. 
+> **Version Note:** MET-MAP and the source code contained in this repository is a **preliminary implementation** of some of the ideas that are now part of Multi-GASTON. This implementation was used specifically for the analyses in our 2025 *Nature* publication. 
 > 
-> For the **current and actively maintained** version of the framework, which now enables simoutaneous learning from _multiple samples_ with _non-linear_ feature functions, please refer to [Multi-GASTON repository](https://github.com/raphael-group/Multi-GASTON).
+> For the **current and actively maintained** model, which enables simoutaneous learning from _multiple samples_ with _non-linear_ feature functions, please refer to [Multi-GASTON repository](https://github.com/raphael-group/Multi-GASTON).
 
 ---
 
@@ -30,18 +30,11 @@ To support reproducibility, this repository now includes:
 * **Downstream metabolite analyses**
 
 ## Installation
-
-1. **Option 1:** To install the preliminary version of the method used in this repository:
    ```bash
    git clone https://github.com/raphael-group/MET-MAP.git
    cd MET-MAP
    ```
    
-2. **Option 2:** To install the current version of Multi-GASTON, which is **compatible** with MET-MAP applications, please refer to Multi-GASTON installation at https://github.com/raphael-group/Multi-GASTON. After installing Multi-GASTON package, simply activate the conda enviroment:
-    ```
-    conda activate multi_gaston_env
-    ```
-
 ## Data availability
 For liver and small intestine metabolomics data used in the paper, please refer to Figshare repositories:
 
