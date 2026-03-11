@@ -12,7 +12,7 @@ This repository provides the source code and Jupyter notebook tutorials for appl
 > [!IMPORTANT]
 > **Version Note:** MET-MAP and the source code contained in this repository is a **preliminary implementation** of some of the ideas that are now part of **Multi-GASTON**. This implementation was used specifically for the analyses in our 2025 *Nature* publication. 
 > 
-> For the **current and actively maintained** model, which enables simoutaneous learning from _multiple samples_ with _non-linear_ feature functions, please refer to [Multi-GASTON repository](https://github.com/raphael-group/Multi-GASTON).
+> **Please Note:** This repository is **no longer actively maintained**. For the most up-to-date method with features including simultaneous learning from *multiple samples* with *non-linear* feature functions, we strongly recommend using **[Multi-GASTON](https://github.com/raphael-group/Multi-GASTON)** instead.
 
 ---
 
